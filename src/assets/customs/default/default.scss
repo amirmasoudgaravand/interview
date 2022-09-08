@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Vazirmatn", sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  direction: rtl;
+  background-color: #efeff4;
+  h1 {
+    margin: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+
+  .background_yellow {
+    background: #fc0 !important;
+  }
+  .background_btn_charge_amount {
+    background-color: #f0eff5;
+    width: 95px;
+    height: 34px;
+    margin-bottom: 10px;
+  }
+  .btn_bankpayment {
+    background-color: #fc0;
+    width: 100%;
+    font-weight: 700;
+    padding: 10px 15px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: rgb(248, 215, 82);
+    }
+  }
+  .font_weight_normal {
+    font-weight: normal !important;
+  }
+  .cursor_disabled {
+    cursor: no-drop;
+  }
+  .border_red{
+    border-color: red;
+  }
+  .default_toggle_inner{
+    margin-left: -100% !important;
+  }
+  .default_toggle_switch{
+    left: -3px;
+    transition: all 0.3s ease-in 0s;
+  }
+  .direction_ltr{
+    direction: ltr;
+  }
+  .nav_border_radius_ltr{
+    padding-left: 15px;
+    border-radius: 0 45px 45px 0;
+  }
+  .margin_corporate_text{
+    margin-left: 6px;
+    line-height: 24px;
+  }
+  .padding_left_zero{
+    padding-left: 0px;
+  }
+  .right_zero{
+    right:0px !important;
+  }
+  .margin-left{
+    margin-left:25px;
+  }
+  .margin-left-mobile-lang{
+    margin-left: 9px;
+  }
+  .margin-right{
+    margin-right:5px !important;
+  }
+  .corporate_text_en{
+    margin-top: 3px;
+    margin-left: 4px;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .background_btn_charge_amount {
+  width: 92px !important;
+  }
+}
+@media screen and (max-width: 344px) {
+  .background_btn_charge_amount {
+    width: 83px !important;
+    font-size: 11px !important;
+  }
+}
+@media screen and (max-width: 318px) {
+  .background_btn_charge_amount {
+    width: 78px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
