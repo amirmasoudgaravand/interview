@@ -41,6 +41,12 @@ function Form() {
           value: "50,000",
         })
       );
+      dispatch(
+        addPhoneNumber({
+          name: "purchaseBonus",
+          value: "500",
+        })
+      );
       if (!toggleAmazing || amazingOrNormal !== "amazing") {
         dispatch(toggle({ name: "chargeType", state: false }));
       } else {
@@ -62,13 +68,14 @@ function Form() {
     } else {
       if (t(value) !== t("permanent") && typeSim === true) {
         setTypeSim(false);
-        setSelectedCharge("50,000");
+       // 
         dispatch(
           addPhoneNumber({
             name: "chargeAmountRials",
             value: "50,000",
           })
         );
+       
         dispatch(toggle({ name: "chargeType", state: false }));
         dispatch(
           addPhoneNumber({
@@ -77,6 +84,13 @@ function Form() {
           })
         );
         if (toggleAmazing || amazingOrNormal === "amazing") {
+          setSelectedCharge("50000");
+          dispatch(
+            addPhoneNumber({
+              name: "purchaseBonus",
+              value: "500",
+            })
+          );
           dispatch(toggle({ name: "chargeType", state: true }));
           dispatch(
             addPhoneNumber({
@@ -141,13 +155,19 @@ function Form() {
                 value: commaThreeDigits("50,000"),
               })
             );
+            dispatch(
+              addPhoneNumber({
+                name: "purchaseBonus",
+                value: "500",
+              })
+            );
           }
         }
       }
     }
   }
 
-  function handleSubmitForm(event: any) {
+  function handleSubmitForm(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
   }
 
@@ -180,7 +200,7 @@ function Form() {
           />
           <span className="amazing_charging_text">{t("amazingCharging")}</span>
         </div>
-        <form onSubmit={(event: any) => handleSubmitForm(event)}>
+        <form onSubmit={(event: React.FormEvent<HTMLFormElement>) => handleSubmitForm(event)}>
           <Input
             name="phoneNumber"
             required={true}
