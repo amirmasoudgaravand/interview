@@ -1,0 +1,39 @@
+.mobile_nav_menu_yellow {
+  background-color: #fc0;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  .menu_icon {
+    width: 29px;
+    height: 29px;
+    cursor: pointer;
+  }
+}
+.mobile_nav_menu {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #1d1d1d;
+  color: #fff;
+  transition: all 0.3s ease-in 0s;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  z-index:1;
+  &.menu_active{
+    left: 0;
+  }
+  li {
+    border-bottom: 1px solid #565656;
+    height: 56px;
+    width: 100%;
+    span {
+      padding-right: 21px;
+      line-height: 57px;
+      padding-left: 21px;
+    }
+  }
+}

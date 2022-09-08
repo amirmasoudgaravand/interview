@@ -1,0 +1,28 @@
+.container_header {
+  background-color: #000;
+  .desktop_nav {
+    height: 100%;
+    display: flex;
+  }
+  .mobile_nav {
+    display: none;
+  }
+  .logo {
+    height: 90px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container_header {
+    .desktop_nav {
+      display: none;
+    }
+    .mobile_nav{
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.form_container {
+  flex: 0 0 58.3333333333%;
+  max-width: 58.3333333333%;
+  .form {
+    max-width: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    .form_title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 35px;
+    }
+    .form_sim_type_text {
+      color: #8b8b8d;
+      font-size: 14px;
+      font-weight: 400;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .form_sim_type {
+      text-align: center;
+      .form_sim_type_btn {
+        border: 2px solid #e6e6e8;
+        display: inline-block;
+        border-radius: 25px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    .amazing_charging {
+      display: flex;
+      max-width: 215px;
+      margin: 25px auto 45px;
+      align-items: baseline;
+      .amazing_charging_text {
+        font-size: 14px;
+        padding-right: 10px;
+        padding-left: 10px;
+      }
+    }
+    .form_charge_amount {
+      .form_charge_amount_text {
+        color: #8b8b8d;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        margin-top: 0;
+      }
+      .form_charge_amout {
+        margin-bottom: 5px;
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+    }
+    .min_max_rial_text {
+      text-align: center;
+      font-size: 12px;
+      line-height: 0px;
+      color: #8b8b8d;
+      margin-top: -7px;
+    }
+    .form_email {
+      margin-top: 35px;
+    }
+    .error {
+      margin-top: -18px;
+      margin-bottom: 11px;
+      font-size: 14px;
+      color: red;
+    }
+    .alert_danger {
+      text-align: center;
+      border-radius: 12px;
+      border: 1px solid #f5c6cb;
+      margin-top: -16px;
+      color: #721c24;
+      font-size: 12px;
+      line-height: unset;
+      background-color: #f8d7da;
+      padding-right: 11px;
+      padding-left: 11px;
+      padding-bottom: 4px;
+      padding-top: 7px;
+      line-height: 1;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .form_container {
+   display: block;
+    max-width: 100%;
+    margin:0px auto;
+  }
+}

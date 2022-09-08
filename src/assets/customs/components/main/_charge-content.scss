@@ -1,0 +1,30 @@
+.content_inner_container {
+  display: flex;
+  padding: 30px 30px 55px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 19px -7px rgb(0 0 0 / 25%);
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 576px) {
+  .content_inner_container {
+    max-width: 540px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .content_inner_container {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content_inner_container {
+    max-width: 720px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content_inner_container {
+    max-width: 930px;
+  }
+}

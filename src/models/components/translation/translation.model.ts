@@ -1,0 +1,37 @@
+export interface translationModel {
+  enterpriseSubscribers: string;
+  store: string;
+  productsServices: string;
+  festivals: string;
+  supports: string;
+  workWithUs: string;
+  weblog: string;
+  news: string;
+  transport: string;
+  buy: string;
+  simcardtype: string;
+  mobilePhone: string;
+  amazingCharging: string;
+  chargeAmount: string;
+  rial: string;
+  otherAmounts: string;
+  email: string;
+  chargeAmountRials: string;
+  minMaxRial: string;
+  bankPayment: string;
+  finalInvoice: string;
+  credit: string;
+  permanent: string;
+  directlyNumber: string;
+  chargeAmountTax: string;
+  chargeAmountIncluding: string;
+  purchaseBonus: string;
+  bankName: string;
+  chargeType: string;
+  mail: string;
+  normal: string;
+  correctPhoneNumber: string;
+  inValidEmail: string;
+  amazing: string;
+  InvoiceDescription: string;
+}
