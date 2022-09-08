@@ -1,10 +1,11 @@
+import React from "react";
 import { useTranslation } from "react-i18next";
 
 interface ButtonProps {
   className?: string;
   title: string;
   subTitle?: string;
-  onClick?: (event: any) => void;
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
   ref?: any;
   disabled?: boolean;
   type:"submit" | "button";

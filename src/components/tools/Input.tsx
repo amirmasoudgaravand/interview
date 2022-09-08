@@ -51,7 +51,7 @@ function Input(props: InputProps) {
   /**
 @function handle change input and dispatch to store
 **/
-  const handleOnChangeInput = (event: any) => {
+  const handleOnChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     let currentValueInput = event.target.value;
     if (props.placeHolder === t("email")) {
       dispatch(addPhoneNumber({ name: "email", value: event.target.value }));
@@ -113,7 +113,7 @@ function Input(props: InputProps) {
         onChange={(event) => {
           handleOnChangeInput(event);
         }}
-        onClick={(event) => handleClickInput(event)}
+        onClick={(event:React.MouseEvent<HTMLInputElement>) => handleClickInput(event)}
         type={props.type ? props.type : "text"}
         id={props.id}
         className={
